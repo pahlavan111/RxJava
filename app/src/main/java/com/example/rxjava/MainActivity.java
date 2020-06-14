@@ -2,8 +2,10 @@ package com.example.rxjava;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -17,7 +19,12 @@ import java.net.URLConnection;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btn_asynk, btn_just;
 
-    private CompositeDisposable compositeDisposable = new CompositeDisposable();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                final AsyncTask execute = new AsyncTaskGetData(link).execute();
+                new AsyncTaskGetData(link).execute();
 
                 final Timer timer = new Timer();
                 timer.scheduleAtFixedRate(new TimerTask() {
@@ -68,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+            startActivity(new Intent(MainActivity.this,ActivityJust.class));
 
 
             }
@@ -75,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    //just
+
 
 
 
