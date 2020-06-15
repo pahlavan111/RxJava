@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String link = "https://finepointmobile.com/data/products.json";
     public static String content = "";
 
-    Button btn_asynk, btn_just;
+    Button btn_asynk, btn_just,btn_operator;
 
 
 
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_asynk = findViewById(R.id.btn_Async);
         btn_just = findViewById(R.id.btn_just);
+        btn_operator = findViewById(R.id.btn_operator);
 
         btn_asynk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +82,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_operator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity.this,OperatorActivity.class));
+
+
+            }
+        });
 
     }
 
