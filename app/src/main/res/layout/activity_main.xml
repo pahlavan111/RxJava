@@ -37,10 +37,19 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_just" />
 
     <Button
+        android:id="@+id/btn_ha_1_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home Android 1 fake api"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_just" />
+
+    <Button
         android:id="@+id/btn_ha_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Android 2 fake api"
+        android:text="Home Android 2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_just" />

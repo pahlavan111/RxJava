@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public static String content = "";
 
     Button btn_asynk, btn_just,btn_operator;
-    Button btn_ha_1, btn_ha_2,btn_ha_3,btn_ha_4,btn_ha_5;
+    Button btn_ha_1,btn_ha_1_2, btn_ha_2,btn_ha_3,btn_ha_4,btn_ha_5;
 
 
 
@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         btn_just = findViewById(R.id.btn_just);
         btn_operator = findViewById(R.id.btn_operator);
         btn_ha_1 = findViewById(R.id.btn_ha_1);
+        btn_ha_1_2= findViewById(R.id.btn_ha_1_2);
         btn_ha_2 = findViewById(R.id.btn_ha_2);
         btn_ha_3 = findViewById(R.id.btn_ha_3);
         btn_ha_4 = findViewById(R.id.btn_ha_4);
@@ -110,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn_ha_2.setOnClickListener(new View.OnClickListener() {
+        btn_ha_1_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
