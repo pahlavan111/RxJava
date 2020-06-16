@@ -31,7 +31,7 @@
         android:id="@+id/btn_ha_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Android 1"
+        android:text="Home Android 1 Obsevable list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_just" />
@@ -40,7 +40,7 @@
         android:id="@+id/btn_ha_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Android 2"
+        android:text="Home Android 2 fake api"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_just" />
