@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".home_android_2.ActivityHomeAndroid2"></activity>
+        <activity android:name=".home_android_3.FlowableActivity"></activity>
+        <activity android:name=".home_android_2.ActivityHomeAndroid2" />
         <activity android:name=".fake_api.FakeApiActivity" />
         <activity android:name=".ActivityHomeAndroid1" />
         <activity android:name=".OperatorActivity" />
