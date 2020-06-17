@@ -19,6 +19,8 @@ import io.reactivex.schedulers.Schedulers;
 //create - just - range  - repeat
 // we used just before
 
+// we use these methods for observable
+
 public class ActivityHomeAndroid2 extends AppCompatActivity {
 
     private static final String TAG2 = "behrooz";
@@ -42,6 +44,7 @@ public class ActivityHomeAndroid2 extends AppCompatActivity {
                 }
             }
         })
+                .repeat(5)  // this method repeat observable 5 times
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());  //تا اینجا یعنی یک نمونه از از observable را ساختیم فقط کافیه با یک observer سابسکرایب بشه
 
