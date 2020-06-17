@@ -70,6 +70,36 @@ public class ActivityHomeAndroid2 extends AppCompatActivity {
             }
         });
 
+
+
+        /////////////////////////////////// range//////////////////////
+
+        Observable.range(1,10)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<Integer>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+
+                    }
+
+                    @Override
+                    public void onNext(Integer integer) {
+                            Log.d(TAG2,"onNext is: "+integer);
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
+
+
     }
 
 }
