@@ -11,6 +11,7 @@ import com.example.rxjava.fake_api.FakeApiActivity;
 import com.example.rxjava.home_android_2.ActivityHomeAndroid2;
 import com.example.rxjava.home_android_3.FlowableActivity;
 import com.example.rxjava.home_android_4.ActivityInterval;
+import com.example.rxjava.home_android_5.TimerActivity;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -135,6 +136,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(MainActivity.this, ActivityInterval.class));
+
+            }
+        });
+
+        btn_ha_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity.this, TimerActivity.class));
 
             }
         });
