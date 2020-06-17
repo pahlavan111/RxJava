@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import com.example.rxjava.fake_api.FakeApiActivity;
+import com.example.rxjava.home_android_2.ActivityHomeAndroid2;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -108,11 +110,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_ha_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity.this, ActivityHomeAndroid2.class));
+
+            }
+        });
+
     }
 
     //just
-
-
 
 
     String getData(String link) {
