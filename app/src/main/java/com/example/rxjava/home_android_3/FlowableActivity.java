@@ -20,7 +20,7 @@ public class FlowableActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flowable);
 
-        Flowable<Integer> flowable = Flowable.range(1, 1000000)     // it is a kind of Observable
+        Flowable<Integer> flowable = Flowable.range(1, 1000000)     // it is a kind of Observable  // it can stop Out of memory exception
                 .observeOn(Schedulers.computation())                          // cause ite a huge computation
                 .onBackpressureBuffer();                                      // important for stack over loading
 

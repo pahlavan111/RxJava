@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.example.rxjava.fake_api.FakeApiActivity;
 import com.example.rxjava.home_android_2.ActivityHomeAndroid2;
 import com.example.rxjava.home_android_3.FlowableActivity;
+import com.example.rxjava.home_android_4.ActivityInterval;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -125,6 +126,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(MainActivity.this, FlowableActivity.class));
+
+            }
+        });
+
+        btn_ha_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity.this, ActivityInterval.class));
 
             }
         });
