@@ -1,13 +1,10 @@
 package com.example.rxjava.home_android_2;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
-
 import com.example.rxjava.R;
 import com.example.rxjava.fake_api.DataModel;
-
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -44,9 +41,9 @@ public class ActivityHomeAndroid2 extends AppCompatActivity {
                 }
             }
         })
-                .repeat(5)  // this method repeat observable 5 times
                 .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread());  //تا اینجا یعنی یک نمونه از از observable را ساختیم فقط کافیه با یک observer سابسکرایب بشه
+                .observeOn(AndroidSchedulers.mainThread())  //تا اینجا یعنی یک نمونه از از observable را ساختیم فقط کافیه با یک observer سابسکرایب بشه
+                .repeat(6);  // this method repeat observable 5 times;
 
         singleObservable.subscribe(new Observer<DataModel>() {
             @Override

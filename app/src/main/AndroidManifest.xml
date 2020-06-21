@@ -18,14 +18,16 @@
         <activity android:name=".fake_api.FakeApiActivity" />
         <activity android:name=".ActivityHomeAndroid1" />
         <activity android:name=".OperatorActivity" />
-        <activity android:name=".ActivityTest" />
-        <activity android:name=".ActivityJust" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ActivityHttpObservable" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".ActivityJust" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 
